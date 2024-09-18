@@ -16,7 +16,10 @@
     "environment": "*",
     "entrypoints": {
         "main": [
-          "dev.xylonity.dungeons.ExampleMod"
+            "dev.xylonity.dungeons.KQDungeons"
+        ],
+        "client": [
+            "dev.xylonity.dungeons.KQDungeons"
         ]
     },
     "mixins": [
