@@ -1,6 +1,6 @@
 package dev.xylonity.dungeons.client.entity.model;
 
-import dev.xylonity.dungeons.KnightQuestDungeonsConstants;
+import dev.xylonity.dungeons.KQDValues;
 import dev.xylonity.dungeons.common.entity.entities.PoisonRatmanEntity;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
@@ -14,17 +14,17 @@ public class PoisonRatmanModel extends GeoModel<PoisonRatmanEntity> {
 
     @Override
     public ResourceLocation getModelResource(PoisonRatmanEntity animatable) {
-        return new ResourceLocation(KnightQuestDungeonsConstants.MOD_ID, "geo/poisonratman.geo.json");
+        return new ResourceLocation(KQDValues.MOD_ID, "geo/poisonratman.geo.json");
     }
 
     @Override
     public ResourceLocation getTextureResource(PoisonRatmanEntity animatable) {
-        return new ResourceLocation(KnightQuestDungeonsConstants.MOD_ID, "textures/entity/poisonratman.png");
+        return new ResourceLocation(KQDValues.MOD_ID, "textures/entity/poisonratman.png");
     }
 
     @Override
     public ResourceLocation getAnimationResource(PoisonRatmanEntity animatable) {
-        return new ResourceLocation(KnightQuestDungeonsConstants.MOD_ID, "animations/poisonratman.animation.json");
+        return new ResourceLocation(KQDValues.MOD_ID, "animations/poisonratman.animation.json");
     }
 
     @Override

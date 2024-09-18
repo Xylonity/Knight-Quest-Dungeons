@@ -8,7 +8,7 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 
-public class KQDungeons implements ModInitializer, ClientModInitializer {
+public class KnightQuestDungeons implements ModInitializer, ClientModInitializer {
 
     @Override
     public void onInitialize() {

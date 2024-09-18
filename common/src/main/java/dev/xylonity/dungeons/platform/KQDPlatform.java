@@ -6,7 +6,7 @@ import net.minecraft.world.level.block.Block;
 
 import java.util.function.Supplier;
 
-public interface KQDungeonsPlatform {
+public interface KQDPlatform {
     <T extends Block> Supplier<T> registerBlock(String id, Supplier<T> block);
     <T extends Item> Supplier<T> registerItem(String id, Supplier<T> item);
     <T extends CreativeModeTab> Supplier<T> registerCreativeTab(String id, Supplier<T> tab);

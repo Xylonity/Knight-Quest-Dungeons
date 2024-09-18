@@ -1,6 +1,6 @@
 package dev.xylonity.dungeons.platform;
 
-import dev.xylonity.dungeons.KnightQuestDungeonsConstants;
+import dev.xylonity.dungeons.KQDValues;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -11,7 +11,7 @@ import net.minecraft.world.level.block.Block;
 
 import java.util.function.Supplier;
 
-public class KQDungeonsFabricPlatform implements KQDungeonsPlatform {
+public class KQDFabricPlatform implements KQDPlatform {
 
     public <T extends Block> Supplier<T> registerBlock(String id, Supplier<T> block) {
         return registerSupplier(BuiltInRegistries.BLOCK, id, block);
@@ -33,7 +33,7 @@ public class KQDungeonsFabricPlatform implements KQDungeonsPlatform {
     }
 
     private static <T, R extends Registry<? super T>> Supplier<T> registerSupplier(R registry, String id, Supplier<T> object) {
-        final T registeredObject = Registry.register((Registry<T>) registry, new ResourceLocation(KnightQuestDungeonsConstants.MOD_ID, id), object.get());
+        final T registeredObject = Registry.register((Registry<T>) registry, new ResourceLocation(KQDValues.MOD_ID, id), object.get());
 
         return () -> registeredObject;
     }

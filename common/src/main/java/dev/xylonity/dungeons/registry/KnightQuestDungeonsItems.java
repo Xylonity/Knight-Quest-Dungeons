@@ -1,7 +1,7 @@
 package dev.xylonity.dungeons.registry;
 
 import dev.xylonity.dungeons.KnightQuestDungeonsCommon;
-import dev.xylonity.dungeons.KnightQuestDungeonsConstants;
+import dev.xylonity.dungeons.KQDValues;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.*;
 
@@ -18,7 +18,7 @@ public class KnightQuestDungeonsItems {
     }
 
     public static final Supplier<CreativeModeTab> KNIGHTQUEST_DUNGEONS_TAB = KnightQuestDungeonsCommon.COMMON_PLATFORM.registerCreativeTab("kqdungeons_tab", () -> KnightQuestDungeonsCommon.COMMON_PLATFORM.newCreativeTabBuilder()
-            .title(Component.translatable("itemgroup." + KnightQuestDungeonsConstants.MOD_ID + ".creative_tab"))
+            .title(Component.translatable("itemgroup." + KQDValues.MOD_ID + ".creative_tab"))
             .icon(() -> new ItemStack(Items.ACACIA_BOAT))
             .displayItems((enabledFeatures, entries) -> {
                 entries.accept(KnightQuestDungeonsItems.GREAT_CHALICE.get());

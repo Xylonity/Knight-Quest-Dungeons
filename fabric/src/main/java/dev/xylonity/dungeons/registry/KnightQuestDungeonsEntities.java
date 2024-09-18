@@ -1,6 +1,6 @@
 package dev.xylonity.dungeons.registry;
 
-import dev.xylonity.dungeons.KnightQuestDungeonsConstants;
+import dev.xylonity.dungeons.KQDValues;
 import dev.xylonity.dungeons.common.entity.entities.PoisonRatmanEntity;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -20,7 +20,7 @@ public class KnightQuestDungeonsEntities {
     }
 
     private static <X extends Entity> EntityType<X> register(String name, EntityType.EntityFactory<X> entity, MobCategory spawnGroup, float width, float height) {
-        return Registry.register(BuiltInRegistries.ENTITY_TYPE, new ResourceLocation(KnightQuestDungeonsConstants.MOD_ID, name), EntityType.Builder.of(entity, spawnGroup).sized(width, height).build(name));
+        return Registry.register(BuiltInRegistries.ENTITY_TYPE, new ResourceLocation(KQDValues.MOD_ID, name), EntityType.Builder.of(entity, spawnGroup).sized(width, height).build(name));
     }
 
 }

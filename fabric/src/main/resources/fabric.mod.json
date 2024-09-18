@@ -16,10 +16,10 @@
     "environment": "*",
     "entrypoints": {
         "main": [
-            "dev.xylonity.dungeons.KQDungeons"
+            "dev.xylonity.dungeons.KnightQuestDungeons"
         ],
         "client": [
-            "dev.xylonity.dungeons.KQDungeons"
+            "dev.xylonity.dungeons.KnightQuestDungeons"
         ]
     },
     "mixins": [

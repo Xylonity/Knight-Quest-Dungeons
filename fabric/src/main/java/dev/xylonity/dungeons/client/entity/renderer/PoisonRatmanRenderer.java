@@ -1,7 +1,7 @@
 package dev.xylonity.dungeons.client.entity.renderer;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import dev.xylonity.dungeons.KnightQuestDungeonsConstants;
+import dev.xylonity.dungeons.KQDValues;
 import dev.xylonity.dungeons.client.entity.model.PoisonRatmanModel;
 import dev.xylonity.dungeons.common.entity.entities.PoisonRatmanEntity;
 import net.minecraft.client.renderer.MultiBufferSource;
@@ -21,7 +21,7 @@ public class PoisonRatmanRenderer extends GeoEntityRenderer<PoisonRatmanEntity> 
 
     @Override
     public @NotNull ResourceLocation getTextureLocation(@NotNull PoisonRatmanEntity animatable) {
-        return new ResourceLocation(KnightQuestDungeonsConstants.MOD_ID, "textures/entity/poisonratman.png");
+        return new ResourceLocation(KQDValues.MOD_ID, "textures/entity/poisonratman.png");
     }
 
     @Override
